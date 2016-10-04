@@ -44,6 +44,7 @@
                 name="Індекс споживчих цін"
                 parent="hr_payroll.menu_hr_payroll_configuration"
                 action="ua_payroll_priceindex_list_action"
+                groups="base.group_hr_user"
                 sequence="16"/>
         <!-- мінімальна заробітна плата -->
         <record model="ir.ui.view" id="ua_payroll_mzp_form_view">
@@ -89,6 +90,7 @@
                 name="Мінімальна заробітна плата"
                 parent="hr_payroll.menu_hr_payroll_configuration"
                 action="ua_payroll_mzp_list_action"
+                groups="base.group_hr_user"
                 sequence="15"/>
 
         <!-- report payslip tweak -->
