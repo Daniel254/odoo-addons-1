@@ -13,7 +13,7 @@
 ==============================================
     """,
 
-    'auto_install': True,
+    'auto_install': False,
     # 'website': 'https://www.odoo.com/page/accounting',
     'demo': [],
     'data': [
