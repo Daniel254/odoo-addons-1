@@ -1,0 +1,519 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* delivery_nova_poshta
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-20 15:22+0000\n"
+"PO-Revision-Date: 2016-07-20 18:27+0300\n"
+"Last-Translator: Bogdan Lisnenko <lem8r.ka11a@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: uk\n"
+"X-Generator: Poedit 1.8.5\n"
+
+#. module: delivery_nova_poshta
+#: model:ir.ui.view,arch_db:delivery_nova_poshta.view_partner_form_np
+msgid "+380"
+msgstr "+380"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_accessory_product_ids
+msgid "Accessory Products"
+msgstr "Аксесуари"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_api_key
+msgid "Api Key"
+msgstr "Ключ АРІ"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,help:delivery_nova_poshta.field_delivery_carrier_alternative_product_ids
+msgid "Appear on the product page"
+msgstr "Показувати на сторінці товару"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,help:delivery_nova_poshta.field_delivery_carrier_accessory_product_ids
+msgid "Appear on the shopping cart"
+msgstr "Показувати у кошику"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cities_area
+msgid "Area"
+msgstr "Область"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_areas_areas_center
+msgid "Area Center"
+msgstr "Обл. центр"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_can_be_expensed
+msgid "Can be expensed"
+msgstr "Можна включити у витрати"
+
+#. module: delivery_nova_poshta
+#: model:ir.model,name:delivery_nova_poshta.model_delivery_carrier
+msgid "Carrier"
+msgstr "Перевізник"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_warehouses_city_desc
+msgid "City Description"
+msgstr "Опис міста"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_counterparties_city_ref
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_streets_city_ref
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_warehouses_city_ref
+msgid "City Reference"
+msgstr "Посилання міста"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_counterparties_cp_property
+msgid "Counterparty Property"
+msgstr "Властивість контрагента"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cpaddress_cp_ref
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cpcontactperson_cp_ref
+msgid "Counterparty Reference"
+msgstr "Посилання контрагента"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_counterparties_cp_type
+msgid "Counterparty Type"
+msgstr "Тип контрагента"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_areas_create_uid
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cargo_type_create_uid
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cities_create_uid
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_counterparties_create_uid
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cpaddress_create_uid
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cpcontactperson_create_uid
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_ownership_form_create_uid
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_payer_type_create_uid
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_payment_type_create_uid
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_service_type_create_uid
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_streets_create_uid
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_warehouse_types_create_uid
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_warehouses_create_uid
+msgid "Created by"
+msgstr "Створив"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_areas_create_date
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cargo_type_create_date
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cities_create_date
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_counterparties_create_date
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cpaddress_create_date
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cpcontactperson_create_date
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_ownership_form_create_date
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_payer_type_create_date
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_payment_type_create_date
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_service_type_create_date
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_streets_create_date
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_warehouse_types_create_date
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_warehouses_create_date
+msgid "Created on"
+msgstr "Дата створення"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_areas_name
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cargo_type_name
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cities_name
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_counterparties_name
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cpaddress_name
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cpcontactperson_name
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_ownership_form_name
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_payer_type_name
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_payment_type_name
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_service_type_name
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_streets_name
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_warehouse_types_name
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_warehouses_name
+msgid "Description"
+msgstr "Опис"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_website_description
+msgid "Description for the website"
+msgstr "Опис вебсайту"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,help:delivery_nova_poshta.field_delivery_carrier_website_sequence
+msgid "Determine the display order in the Website E-commerce"
+msgstr "Визначте порядок відображення в інтернет-магазині"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_areas_display_name
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cargo_type_display_name
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cities_display_name
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_counterparties_display_name
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cpaddress_display_name
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cpcontactperson_display_name
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_model_display_name
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_ownership_form_display_name
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_payer_type_display_name
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_payment_type_display_name
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_service_type_display_name
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_streets_display_name
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_warehouse_types_display_name
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_warehouses_display_name
+msgid "Display Name"
+msgstr "Назва для відображення"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_counterparties_edrpou
+msgid "EDRPOU"
+msgstr "ЄДРПОУ"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cpcontactperson_email
+msgid "Email"
+msgstr "Ел. пошта"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_expense_policy
+msgid "Expense Invoice Policy"
+msgstr "Політика рахунків на витрати"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_counterparties_first_name
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cpcontactperson_first_name
+msgid "First Name"
+msgstr "Ім’я"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_ownership_form_full_name
+msgid "Full Name"
+msgstr "По-батькові"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_areas_id
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cargo_type_id
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cities_id
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_counterparties_id
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cpaddress_id
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cpcontactperson_id
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_model_id
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_ownership_form_id
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_payer_type_id
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_payment_type_id
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_service_type_id
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_streets_id
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_warehouse_types_id
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_warehouses_id
+msgid "ID"
+msgstr "ID"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,help:delivery_nova_poshta.field_delivery_carrier_expense_policy
+msgid "If you invoice at cost, the expense will be invoiced on the sale order at the cost of the analytic line;if you invoice at sales price, the price of the product will be used instead."
+msgstr ""
+"Якщо ви обрали виписування рахунків по витратам, то витрати замовлення на продаж будуть включені в рахунок по вартості рядків аналітики замовлення.\n"
+"Якщо обрано виписування по ціні продажу, то буде використовуватися ціна товару."
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_areas___last_update
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cargo_type___last_update
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cities___last_update
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_counterparties___last_update
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cpaddress___last_update
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cpcontactperson___last_update
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_model___last_update
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_ownership_form___last_update
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_payer_type___last_update
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_payment_type___last_update
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_service_type___last_update
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_streets___last_update
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_warehouse_types___last_update
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_warehouses___last_update
+msgid "Last Modified on"
+msgstr "Остання модифікація"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_counterparties_last_name
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cpcontactperson_last_name
+msgid "Last Name"
+msgstr "Прізвище"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_areas_write_uid
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cargo_type_write_uid
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cities_write_uid
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_counterparties_write_uid
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cpaddress_write_uid
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cpcontactperson_write_uid
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_ownership_form_write_uid
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_payer_type_write_uid
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_payment_type_write_uid
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_service_type_write_uid
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_streets_write_uid
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_warehouse_types_write_uid
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_warehouses_write_uid
+msgid "Last Updated by"
+msgstr "Востаннє оновив"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_areas_write_date
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cargo_type_write_date
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cities_write_date
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_counterparties_write_date
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cpaddress_write_date
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cpcontactperson_write_date
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_ownership_form_write_date
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_payer_type_write_date
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_payment_type_write_date
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_service_type_write_date
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_streets_write_date
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_warehouse_types_write_date
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_warehouses_write_date
+msgid "Last Updated on"
+msgstr "Останнє оновлення"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_counterparties_middle_name
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cpcontactperson_middle_name
+msgid "Middle Name"
+msgstr "По-батькові"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_warehouses_wh_number
+msgid "Number"
+msgstr "Номер"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_counterparties_ownership_form
+msgid "Ownership Form Ref"
+msgstr "Посилання форми власності"
+
+#. module: delivery_nova_poshta
+#: model:ir.model,name:delivery_nova_poshta.model_res_partner
+msgid "Partner"
+msgstr "Партнер"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cpcontactperson_phone
+msgid "Phone"
+msgstr "Телефон"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_warehouses_place_max_weight
+msgid "Place Max Weight Allowed"
+msgstr "Максимально дозволена вага"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_rating_ids
+msgid "Rating"
+msgstr "Оцінка"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_areas_ref
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cargo_type_ref
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cities_ref
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_counterparties_ref
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cpaddress_ref
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_cpcontactperson_ref
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_ownership_form_ref
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_payer_type_ref
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_payment_type_ref
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_service_type_ref
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_streets_ref
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_warehouse_types_ref
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_warehouses_ref
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_res_partner_np_city_ref
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_res_partner_np_countpart_ref
+msgid "Reference"
+msgstr "Посилання"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_website_sequence
+msgid "Sequence"
+msgstr "Послідовність"
+
+#. module: delivery_nova_poshta
+#: model:ir.ui.view,arch_db:delivery_nova_poshta.view_delivery_carrier_form_inherit_wk_shipping
+msgid "Settings"
+msgstr "Налаштування"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_website_size_x
+msgid "Size X"
+msgstr "Розмір X"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_website_size_y
+msgid "Size Y"
+msgstr "Розмір Y"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,help:delivery_nova_poshta.field_delivery_carrier_can_be_expensed
+msgid "Specify whether the product can be selected in an HR expense."
+msgstr "Вкажіть, чи можна вказувати товар у витратах співробітників."
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_streets_street_type
+msgid "Street Type"
+msgstr "Тип вулиці"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_streets_street_type_ref
+msgid "Street Type Reference"
+msgstr "Посилання на тип вулиці"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_website_style_ids
+msgid "Styles"
+msgstr "Стилі"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_alternative_product_ids
+msgid "Suggested Products"
+msgstr "Запропоновані товари:"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,help:delivery_nova_poshta.field_delivery_carrier_website_url
+msgid "The full URL to access the document through the website."
+msgstr "URL-адреса повністю, для доступу до документації через сайт"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,help:delivery_nova_poshta.field_delivery_carrier_public_categ_ids
+msgid "Those categories are used to group similar products for e-commerce."
+msgstr "Ці категорії використовуються для групування подібних товарів у інтернет-магазині."
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_warehouses_max_weight
+msgid "Total Max Weight Allowed"
+msgstr "Максимально дозволена вага"
+
+#. module: delivery_nova_poshta
+#: model:ir.model,name:delivery_nova_poshta.model_stock_picking
+msgid "Transfer"
+msgstr "Переміщення"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_np_warehouses_type_of_wh
+msgid "Type Of Warehouse"
+msgstr "Тип відділення"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_website_published
+msgid "Visible in Website"
+msgstr "Видимий на сайті"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_website_message_ids
+msgid "Website Comments"
+msgstr "Коментарі вебсайту"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_stock_picking_website_message_ids
+msgid "Website Messages"
+msgstr "Повідомлення з веб-сайту"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_public_categ_ids
+msgid "Website Product Category"
+msgstr "Категорія товару на сайті"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_website_url
+msgid "Website URL"
+msgstr "URL сайту"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,help:delivery_nova_poshta.field_stock_picking_website_message_ids
+msgid "Website communication history"
+msgstr "Історія бесіди на веб-сайті"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_website_meta_description
+msgid "Website meta description"
+msgstr "Мета-опис сайту"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_website_meta_keywords
+msgid "Website meta keywords"
+msgstr "Мета-ключі сайту"
+
+#. module: delivery_nova_poshta
+#: model:ir.model.fields,field_description:delivery_nova_poshta.field_delivery_carrier_website_meta_title
+msgid "Website meta title"
+msgstr "Мета-заголовок сайту"
+
+#. module: delivery_nova_poshta
+#: model:ir.model,name:delivery_nova_poshta.model_delivery_carrier_np_areas
+msgid "delivery.carrier.np.areas"
+msgstr "delivery.carrier.np.areas"
+
+#. module: delivery_nova_poshta
+#: model:ir.model,name:delivery_nova_poshta.model_delivery_carrier_np_cargo_type
+msgid "delivery.carrier.np.cargo.type"
+msgstr "delivery.carrier.np.cargo.type"
+
+#. module: delivery_nova_poshta
+#: model:ir.model,name:delivery_nova_poshta.model_delivery_carrier_np_cities
+msgid "delivery.carrier.np.cities"
+msgstr "delivery.carrier.np.cities"
+
+#. module: delivery_nova_poshta
+#: model:ir.model,name:delivery_nova_poshta.model_delivery_carrier_np_counterparties
+msgid "delivery.carrier.np.counterparties"
+msgstr "delivery.carrier.np.counterparties"
+
+#. module: delivery_nova_poshta
+#: model:ir.model,name:delivery_nova_poshta.model_delivery_carrier_np_cpaddress
+msgid "delivery.carrier.np.cpaddress"
+msgstr "delivery.carrier.np.cpaddress"
+
+#. module: delivery_nova_poshta
+#: model:ir.model,name:delivery_nova_poshta.model_delivery_carrier_np_cpcontactperson
+msgid "delivery.carrier.np.cpcontactperson"
+msgstr "delivery.carrier.np.cpcontactperson"
+
+#. module: delivery_nova_poshta
+#: model:ir.model,name:delivery_nova_poshta.model_delivery_carrier_np_model
+msgid "delivery.carrier.np.model"
+msgstr "delivery.carrier.np.model"
+
+#. module: delivery_nova_poshta
+#: model:ir.model,name:delivery_nova_poshta.model_delivery_carrier_np_ownership_form
+msgid "delivery.carrier.np.ownership.form"
+msgstr "delivery.carrier.np.ownership.form"
+
+#. module: delivery_nova_poshta
+#: model:ir.model,name:delivery_nova_poshta.model_delivery_carrier_np_payer_type
+msgid "delivery.carrier.np.payer.type"
+msgstr "delivery.carrier.np.payer.type"
+
+#. module: delivery_nova_poshta
+#: model:ir.model,name:delivery_nova_poshta.model_delivery_carrier_np_payment_type
+msgid "delivery.carrier.np.payment.type"
+msgstr "delivery.carrier.np.payment.type"
+
+#. module: delivery_nova_poshta
+#: model:ir.model,name:delivery_nova_poshta.model_delivery_carrier_np_service_type
+msgid "delivery.carrier.np.service.type"
+msgstr "delivery.carrier.np.service.type"
+
+#. module: delivery_nova_poshta
+#: model:ir.model,name:delivery_nova_poshta.model_delivery_carrier_np_streets
+msgid "delivery.carrier.np.streets"
+msgstr "delivery.carrier.np.streets"
+
+#. module: delivery_nova_poshta
+#: model:ir.model,name:delivery_nova_poshta.model_delivery_carrier_np_warehouse_types
+msgid "delivery.carrier.np.warehouse.types"
+msgstr "delivery.carrier.np.warehouse.types"
+
+#. module: delivery_nova_poshta
+#: model:ir.model,name:delivery_nova_poshta.model_delivery_carrier_np_warehouses
+msgid "delivery.carrier.np.warehouses"
+msgstr "delivery.carrier.np.warehouses"

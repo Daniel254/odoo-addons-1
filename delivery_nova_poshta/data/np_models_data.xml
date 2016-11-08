@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <!-- Address -->
+        <record model="ir.cron" id="update_np_cities">
+            <field name="name">Update Nova Poshta Cities</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="doall" eval="False"/>
+            <field name="model" eval="'delivery.carrier.np.cities'"/>
+            <field name="function" eval="'cron_update'"/>
+            <field name="args" eval="'()'" />
+        </record>
+        <record model="ir.cron" id="update_np_areas">
+            <field name="name">Update Nova Poshta Areas</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="doall" eval="False"/>
+            <field name="model" eval="'delivery.carrier.np.areas'"/>
+            <field name="function" eval="'cron_update'"/>
+            <field name="args" eval="'()'" />
+        </record>
+        <record model="ir.cron" id="update_np_warehouse_types">
+            <field name="name">Update Nova Poshta Warehouse types</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="doall" eval="False"/>
+            <field name="model" eval="'delivery.carrier.np.warehouse.types'"/>
+            <field name="function" eval="'cron_update'"/>
+            <field name="args" eval="'()'" />
+        </record>
+        <record model="ir.cron" id="update_np_warehouses">
+            <field name="name">Update Nova Poshta Warehouses</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="doall" eval="False"/>
+            <field name="model" eval="'delivery.carrier.np.warehouses'"/>
+            <field name="function" eval="'cron_update'"/>
+            <field name="args" eval="'()'" />
+        </record>
+        <record model="ir.cron" id="update_np_owf">
+            <field name="name">Update Nova Poshta Ownership Forms</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="doall" eval="False"/>
+            <field name="model" eval="'delivery.carrier.np.ownership.form'"/>
+            <field name="function" eval="'cron_update'"/>
+            <field name="args" eval="'()'" />
+        </record>
+   </data>
+</odoo>

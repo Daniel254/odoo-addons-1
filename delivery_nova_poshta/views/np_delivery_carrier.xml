@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_delivery_carrier_form_inherit_wk_shipping" model="ir.ui.view">
+            <field name="name">delivery.carrier.form.novaposhta</field>
+            <field name="model">delivery.carrier</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="delivery.view_delivery_carrier_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="Settings" attrs="{'invisible':[('delivery_type', '!=', 'np')]}">
+                        <group>
+                            <group>
+                                <field name="default_description"/>
+                            </group>
+                            <group>
+                                <field name="np_api_key"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+        <!-- Stock Pickings -->
+        <record id="shipping_np_form" model="ir.ui.view">
+            <field name="name">delivery.stock.np.form</field>
+            <field name="model">stock.picking</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="delivery.view_picking_withcarrier_out_form" />
+            <field name="arch" type="xml">
+                <field name='number_of_packages' position='before'>
+                    <field name="np_document_url" widget="url" text="Друк"/>
+                    <field name="np_description"/>
+               </field>
+            </field>
+        </record>
+
+
+    </data>
+</openerp>

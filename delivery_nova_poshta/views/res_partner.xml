@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_partner_form_np" model="ir.ui.view">
+            <field name="name">res.partner.form.np</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='child_ids']/form[1]/sheet/group[1]" position="attributes">
+                    <attribute name="attrs">{'invisible': [('is_nova_poshta_addr','=', True)]}</attribute>
+                </xpath>
+
+                <xpath expr="//field[@name='child_ids']/form[1]/sheet/hr" position="after">
+
+                    <label for="is_nova_poshta_addr"
+                        string="Адреса для Нової Пошти"
+                        attrs="{'invisible': [('type','&lt;&gt;', 'delivery')]}"/>
+                    <field name="is_nova_poshta_addr"
+                        attrs="{'invisible': [('type','&lt;&gt;', 'delivery')]}"/>
+
+
+                    <group attrs="{'invisible': [('is_nova_poshta_addr','=', False)]}">
+                        <group>
+                            <field name="np_role"/>
+                            <field name="np_service_type"/>
+                            <field name="np_payer_type"
+                                attrs="{'invisible': [('np_role','=', 'Recipient')]}"/>
+                            <field name="np_payment_type"
+                                attrs="{'invisible': [('np_role','=', 'Recipient')]}"/>
+                            <field name="np_cargo_type"
+                                attrs="{'invisible': [('np_role','=', 'Recipient')]}"/>
+                            <field
+                                name="np_city_id"
+                                attrs="{'required': [('is_nova_poshta_addr','=', True)]}"/>
+                            <field name="np_city_ref" invisible="1"/>
+                            <field name="np_wh_id"
+                                attrs="{
+                                    'readonly':[('np_city_id', '=', False)],
+                                    'invisible': [('np_service_type','=', 'Doors')],
+                                    'required': ['&amp;',('is_nova_poshta_addr','=', True),('np_service_type','=', 'Warehouse')]
+                                }"/>
+                            <field name="np_street_id"
+                                attrs="{
+                                        'readonly': [('np_city_id', '=', False)],
+                                        'invisible': [('np_service_type','=', 'Warehouse')],
+                                        'required': ['&amp;',('is_nova_poshta_addr','=', True),('np_service_type','=', 'Doors')]
+                                    }"/>
+                        </group>
+                        <group>
+                            <field name="np_building"
+                                attrs="{
+                                        'readonly': [('np_city_id', '=', False)],
+                                        'invisible': [('np_service_type','=', 'Warehouse')],
+                                        'required': ['&amp;',('is_nova_poshta_addr','=', True),('np_service_type','=', 'Doors')]
+                                    }"/>
+                            <field name="np_flat"
+                                attrs="{
+                                        'readonly': [('np_city_id', '=', False)],
+                                        'invisible': [('np_service_type','=', 'Warehouse')],
+                                        'required': ['&amp;',('is_nova_poshta_addr','=', True),('np_service_type','=', 'Doors')]
+                                    }"/>
+                            <field name="np_phone"
+                                placeholder="+380"
+                                attrs="{'required': [('is_nova_poshta_addr','=', True)]}"/>
+                            <field name="np_email"/>
+                            <field
+                                name="np_last_name"
+                                attrs="{'required': [('is_nova_poshta_addr','=', True)]}"/>
+                            <field
+                                name="np_first_name"
+                                attrs="{'required': [('is_nova_poshta_addr','=', True)]}"/>
+                            <field
+                                name="np_middle_name"/>
+                            <field name="np_countpart_id"
+                                attrs="{
+                                'readonly':[('np_city_id', '=', False)],
+                                'invisible': [('np_role','=', 'Recipient')]}"
+                                groups="base.group_no_one"
+                                context="{
+                                    'default_city_ref': np_city_ref,
+                                    'default_cp_property': np_role,
+                                    'default_ownership_form': 'd558bfcb-7456-11df-ad52-000c29118aa7',
+                                    'default_cp_type': 'PrivatePerson'
+                                }"/>
+                            <field name="np_countpart_ref" invisible="1"/>
+                            <field name="np_contactpers_id"
+                                attrs="{
+                                'readonly':[('np_countpart_id', '=', False)],
+                                'invisible': [('np_role','=', 'Recipient')]}"
+                                groups="base.group_no_one"
+                                context="{'default_cp_ref': np_countpart_ref}"/>
+                            <field name="np_cpaddress_id"
+                                attrs="{
+                                'readonly':[('np_countpart_id', '=', False)],
+                                'invisible': [('np_role','=', 'Recipient')]}"
+                                groups="base.group_no_one"
+                                context="{'default_cp_ref': np_countpart_ref}"/>
+                        </group>
+                    </group>
+                </xpath>
+                <xpath expr="//form[1]/sheet/group[1]" position="after">
+                    <label for="is_nova_poshta_addr"
+                        string="Адреса для Нової Пошти"
+                        attrs="{'invisible': [('is_nova_poshta_addr','=', False)]}"/>
+                    <field name="is_nova_poshta_addr"
+                        attrs="{
+                        'readonly': True,
+                        'invisible': [('is_nova_poshta_addr','=', False)]}"/>
+
+
+                    <group attrs="{'invisible': [('is_nova_poshta_addr','=', False)]}">
+                        <group>
+                            <field name="np_role"/>
+                            <field name="np_service_type"/>
+                            <field name="np_payer_type"
+                                attrs="{'invisible': [('np_role','=', 'Recipient')]}"/>
+                            <field name="np_payment_type"
+                                attrs="{'invisible': [('np_role','=', 'Recipient')]}"/>
+                            <field name="np_cargo_type"
+                                attrs="{'invisible': [('np_role','=', 'Recipient')]}"/>
+                            <field
+                                name="np_city_id"
+                                attrs="{'required': [('is_nova_poshta_addr','=', True)]}"/>
+                            <field name="np_city_ref" invisible="1"/>
+                            <field name="np_wh_id"
+                                attrs="{
+                                    'readonly':[('np_city_id', '=', False)],
+                                    'invisible': [('np_service_type','=', 'Doors')],
+                                    'required': ['&amp;',('is_nova_poshta_addr','=', True),('np_service_type','=', 'Warehouse')]
+                                }"/>
+                            <field name="np_street_id"
+                                attrs="{
+                                        'readonly': [('np_city_id', '=', False)],
+                                        'invisible': [('np_service_type','=', 'Warehouse')],
+                                        'required': ['&amp;',('is_nova_poshta_addr','=', True),('np_service_type','=', 'Doors')]
+                                    }"/>
+                        </group>
+                        <group>
+                            <field name="np_building"
+                                attrs="{
+                                        'readonly': [('np_city_id', '=', False)],
+                                        'invisible': [('np_service_type','=', 'Warehouse')],
+                                        'required': ['&amp;',('is_nova_poshta_addr','=', True),('np_service_type','=', 'Doors')]
+                                    }"/>
+                            <field name="np_flat"
+                                attrs="{
+                                        'readonly': [('np_city_id', '=', False)],
+                                        'invisible': [('np_service_type','=', 'Warehouse')],
+                                        'required': ['&amp;',('is_nova_poshta_addr','=', True),('np_service_type','=', 'Doors')]
+                                    }"/>
+                            <field name="np_phone"
+                                placeholder="+380"
+                                attrs="{'required': [('is_nova_poshta_addr','=', True)]}"/>
+                            <field name="np_email"/>
+                            <field
+                                name="np_last_name"
+                                attrs="{'required': [('is_nova_poshta_addr','=', True)]}"/>
+                            <field
+                                name="np_first_name"
+                                attrs="{'required': [('is_nova_poshta_addr','=', True)]}"/>
+                            <field
+                                name="np_middle_name"/>
+                        </group>
+                    </group>
+                </xpath>
+                <xpath expr="//form[1]/sheet/group[1]" position="attributes">
+                    <attribute name="attrs">{'invisible': [('is_nova_poshta_addr','=', True)]}</attribute>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

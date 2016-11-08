@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <template id="assets_frontend" inherit_id="website.assets_frontend" name="Nova Poshta Assets">
+      <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/website_delivery_nova_poshta/static/src/js/website_delivery_nova_poshta.js"></script>
+      </xpath>
+    </template>
+    <template id="checkout" inherit_id="website_sale.checkout">
+        <xpath expr="//t/div/div/form/div[1]/div[1]/div[1]/div[14]" position="after">
+            <div class="form-group">
+
+              <div t-attf-class="form-group #{error.get('is_nova_poshta_addr') and 'has-error' or ''} col-lg-6">
+                <input type="checkbox" name="is_nova_poshta_addr" class="" value="True" t-att-checked="checkout.get('is_nova_poshta_addr')"/>
+                <label class="control-label label-optional" for="is_nova_poshta_addr">Адреса для Нової Пошти</label>
+              </div>
+
+              <div class="clearfix"/>
+
+              <div id="nova_poshta_address_block">
+                <div t-attf-class="form-group col-lg-6">
+                    <label class="control-label" for="np_service_type">Спосіб доставки</label>
+                    <select name="np_service_type" class="form-control">
+                        <option t-att-selected="checkout.get('np_service_type') == 'Warehouse'" value="Warehouse">На відділення</option>
+                        <option t-att-selected="checkout.get('np_service_type') == 'Doors'" value="Doors">На адресу</option>
+                    </select>
+                </div>
+
+                <div t-attf-class="form-group #{error.get('np_city_id') and 'has-error' or ''} col-lg-6">
+                    <label class="control-label" for="np_city_name">Місто</label>
+                    <input type="text" name="np_city_name" class="form-control" t-att-value="checkout.get('np_city_name')"/>
+                    <input type="hidden" name="np_city_ref" t-att-value="checkout.get('np_city_ref')"/>
+                    <input type="hidden" name="np_city_id" t-att-value="checkout.get('np_city_id')"/>
+                    <input type="hidden" name="np_countpart_id" t-att-value="checkout.get('np_countpart_id')"/>
+                </div>
+                <div id="np_wh" t-attf-class="form-group #{error.get('np_wh_id') and 'has-error' or ''} col-lg-6">
+                    <label class="control-label" for="np_wh_name">Відділення</label>
+                    <input type="text" name="np_wh_name" placeholder="Почніть вводити номер відділення" class="form-control" t-att-value="checkout.get('np_wh_name')"/>
+                    <input type="hidden" name="np_wh_id" t-att-value="checkout.get('np_wh_id')"/>
+                </div>
+                <div id="np_street" t-attf-class="form-group #{error.get('np_street_id') and 'has-error' or ''} col-lg-6">
+                    <label class="control-label" for="np_street_name">Вулиця</label>
+                    <input type="text" name="np_street_name" placeholder="Почніть вводити назву вулиці" class="form-control" t-att-value="checkout.get('np_street_name')"/>
+                    <input type="hidden" name="np_street_id" t-att-value="checkout.get('np_street_id')"/>
+                </div>
+                <div id="np_building" t-attf-class="form-group #{error.get('np_building') and 'has-error' or ''} col-lg-6">
+                    <label class="control-label" for="np_building">Будинок</label>
+                    <input type="text" name="np_building" class="form-control" t-att-value="checkout.get('np_building')"/>
+                </div>
+                <div id="np_flat" t-attf-class="form-group #{error.get('np_flat') and 'has-error' or ''} col-lg-6">
+                    <label class="control-label" for="np_flat">Квартира</label>
+                    <input type="text" name="np_flat" class="form-control" t-att-value="checkout.get('np_flat')"/>
+                </div>
+                <div t-attf-class="form-group #{error.get('np_phone') and 'has-error' or ''} col-lg-6">
+                    <label class="control-label" for="np_phone">Телефон</label>
+                    <input type="text" name="np_phone" placeholder="+380" class="form-control" t-att-value="checkout.get('np_phone')"/>
+                </div>
+                <div t-attf-class="form-group #{error.get('np_email') and 'has-error' or ''} col-lg-6">
+                    <label class="control-label" for="np_email">Ел. пошта</label>
+                    <input type="text" name="np_email" class="form-control" t-att-value="checkout.get('np_email')"/>
+                </div>
+                <div t-attf-class="form-group #{error.get('np_last_name') and 'has-error' or ''} col-lg-6">
+                    <label class="control-label" for="np_last_name">Прізвище</label>
+                    <input type="text" name="np_last_name" class="form-control" t-att-value="checkout.get('np_last_name')"/>
+                </div>
+                <div t-attf-class="form-group #{error.get('np_first_name') and 'has-error' or ''} col-lg-6">
+                    <label class="control-label" for="np_first_name">Ім'я</label>
+                    <input type="text" name="np_first_name" class="form-control" t-att-value="checkout.get('np_first_name')"/>
+                </div>
+                <div t-attf-class="form-group #{error.get('np_middle_name') and 'has-error' or ''} col-lg-6">
+                    <label class="control-label" for="np_middle_name">По-батькові</label>
+                    <input type="text" name="np_middle_name" class="form-control" t-att-value="checkout.get('np_middle_name')"/>
+                </div>
+              </div>
+            </div>
+        </xpath>
+    </template>
+  </data>
+</odoo>
