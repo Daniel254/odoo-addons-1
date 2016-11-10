@@ -50,7 +50,7 @@
                                 </div>
                             </div>
                             <br/><br/>
-                            <div t-field="o.picking_type_id"/>
+                            <!-- <div t-field="o.picking_type_id"/> -->
                             <div t-if="o.picking_type_id.code=='incoming'">
                                 <h1 class="mt0">Прибуткова накладна: <span t-field="o.name"/></h1>
                             </div>
@@ -145,9 +145,19 @@
                                 У вас не зарезервовано товарів для цієї операції.  Будь ласка, натисніть кнопку 'Зарезервувати'
                                 для того, щоб перевірити чи є в наявності товари.
                             </p>
-                            <div t-if="o.picking_type_id.code != 'incoming'">
+                            <!-- <div t-if="o.picking_type_id.code != 'incoming'">
                                 <br/><br/><br/>
                                 Виписав: __________________  <span t-field="user.name"/>
+                           </div> -->
+                           <div t-if="o.picking_type_id.code != 'incoming'">
+                               <div class="row mt32 mb16">
+                                   <div class="col-xs-6">
+                                       <span>Відвантажив: ____________________________________</span>
+                                   </div>
+                                   <div class="col-xs-6 text-right">
+                                       <span>Отримав: ____________________________________</span>
+                                   </div>
+                               </div>
                            </div>
                         </div>
                     </t>
