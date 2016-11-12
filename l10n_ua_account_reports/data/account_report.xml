@@ -9,5 +9,13 @@
             name="l10n_ua_account_reports.acc_report_invoice_nakladna"
             file="l10n_ua_account_reports.acc_report_nakladna"
         />
+        <report
+            string="Акт"
+            id="action_invoice_akt"
+            model="account.invoice"
+            report_type="qweb-pdf"
+            name="l10n_ua_account_reports.acc_report_invoice_akt"
+            file="l10n_ua_account_reports.acc_report_nakladna"
+        />
     </data>
 </odoo>
