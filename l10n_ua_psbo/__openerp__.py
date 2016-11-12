@@ -20,7 +20,7 @@
 Також буде створено налаштування податків
 для обліку ПДВ
     """,
-    'category': 'Localization/Account Charts',
+    'category': 'Localization',
     'version': '1.1',
     'depends': ['account'],
     'data': [
