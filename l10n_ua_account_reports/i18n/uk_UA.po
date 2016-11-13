@@ -1,0 +1,141 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* l10n_ua_account_reports
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-13 18:54+0000\n"
+"PO-Revision-Date: 2016-11-13 18:54+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_ua_account_reports
+#: model:ir.ui.view,arch_db:l10n_ua_account_reports.ua_report_invoice_document
+msgid "<span><strong>Client:</strong></span><br/>"
+msgstr "<span><strong>Замовник:</strong></span><br/>"
+
+#. module: l10n_ua_account_reports
+#: model:ir.ui.view,arch_db:l10n_ua_account_reports.ua_report_invoice_document
+msgid "<span><strong>Vendor:</strong></span><br/>"
+msgstr "<span><strong>Постачальник:</strong></span><br/>"
+
+#. module: l10n_ua_account_reports
+#: model:ir.ui.view,arch_db:l10n_ua_account_reports.ua_report_invoice_document
+msgid "<strong>Comment:</strong>"
+msgstr "<strong>Примітка:</strong>"
+
+#. module: l10n_ua_account_reports
+#: model:ir.ui.view,arch_db:l10n_ua_account_reports.ua_report_invoice_document
+msgid "<strong>Customer Code:</strong>"
+msgstr "<strong>Код клієнта:</strong>"
+
+#. module: l10n_ua_account_reports
+#: model:ir.ui.view,arch_db:l10n_ua_account_reports.ua_report_invoice_document
+msgid "<strong>Description:</strong>"
+msgstr "<strong>Підстава:</strong>"
+
+#. module: l10n_ua_account_reports
+#: model:ir.ui.view,arch_db:l10n_ua_account_reports.ua_report_invoice_document
+msgid "<strong>Due Date:</strong>"
+msgstr "<strong>Оплатити до:</strong>"
+
+#. module: l10n_ua_account_reports
+#: model:ir.ui.view,arch_db:l10n_ua_account_reports.ua_report_invoice_document
+msgid "<strong>Fiscal Position Remark:</strong>"
+msgstr "<strong>Опис схеми оподаткування:</strong>"
+
+#. module: l10n_ua_account_reports
+#: model:ir.ui.view,arch_db:l10n_ua_account_reports.ua_report_invoice_document
+msgid "<strong>Invoice Date:</strong>"
+msgstr "<strong>Дата рахунку:</strong>"
+
+#. module: l10n_ua_account_reports
+#: model:ir.ui.view,arch_db:l10n_ua_account_reports.ua_report_invoice_document
+msgid "<strong>Reference:</strong>"
+msgstr "<strong>Референс:</strong>"
+
+#. module: l10n_ua_account_reports
+#: model:ir.ui.view,arch_db:l10n_ua_account_reports.ua_report_invoice_document
+msgid "<strong>Source:</strong>"
+msgstr "<strong>На основі:</strong>"
+
+#. module: l10n_ua_account_reports
+#: model:ir.ui.view,arch_db:l10n_ua_account_reports.ua_report_invoice_document
+msgid "<strong>Subtotal</strong>"
+msgstr "<strong>Разом</strong>"
+
+#. module: l10n_ua_account_reports
+#: model:ir.ui.view,arch_db:l10n_ua_account_reports.ua_report_invoice_document
+msgid "<strong>Total</strong>"
+msgstr "<strong>Всього до сплати</strong>"
+
+#. module: l10n_ua_account_reports
+#: model:ir.ui.view,arch_db:l10n_ua_account_reports.ua_report_invoice_document
+msgid "Cancelled Invoice"
+msgstr "Скасовані рахунки"
+
+#. module: l10n_ua_account_reports
+#: model:ir.ui.view,arch_db:l10n_ua_account_reports.ua_report_invoice_document
+msgid "Description"
+msgstr "Опис"
+
+#. module: l10n_ua_account_reports
+#: model:ir.ui.view,arch_db:l10n_ua_account_reports.ua_report_invoice_document
+msgid "Disc.(%)"
+msgstr "Знижка (%)"
+
+#. module: l10n_ua_account_reports
+#: model:ir.ui.view,arch_db:l10n_ua_account_reports.ua_report_invoice_document
+msgid "Draft Invoice"
+msgstr "Чорновий рахунок"
+
+#. module: l10n_ua_account_reports
+#: model:ir.ui.view,arch_db:l10n_ua_account_reports.ua_report_invoice_document
+msgid "Invoice"
+msgstr "Рахунок №"
+
+#. module: l10n_ua_account_reports
+#: model:ir.ui.view,arch_db:l10n_ua_account_reports.ua_report_invoice_document
+msgid "PRO-FORMA"
+msgstr "ПРОФОРМА"
+
+#. module: l10n_ua_account_reports
+#: model:ir.ui.view,arch_db:l10n_ua_account_reports.ua_report_invoice_document
+msgid "Price"
+msgstr "Сума"
+
+#. module: l10n_ua_account_reports
+#: model:ir.ui.view,arch_db:l10n_ua_account_reports.ua_report_invoice_document
+msgid "Quantity"
+msgstr "Кількість"
+
+#. module: l10n_ua_account_reports
+#: model:ir.ui.view,arch_db:l10n_ua_account_reports.ua_report_invoice_document
+msgid "Refund"
+msgstr "Відшкодування"
+
+#. module: l10n_ua_account_reports
+#: model:ir.ui.view,arch_db:l10n_ua_account_reports.ua_report_invoice_document
+msgid "Registry:"
+msgstr "ЄДРПОУ:"
+
+#. module: l10n_ua_account_reports
+#: model:ir.ui.view,arch_db:l10n_ua_account_reports.ua_report_invoice_document
+msgid "Unit Price"
+msgstr "Ціна"
+
+#. module: l10n_ua_account_reports
+#: model:ir.ui.view,arch_db:l10n_ua_account_reports.ua_report_invoice_document
+msgid "Vendor Bill"
+msgstr "Рахунок від постачальника №"
+
+#. module: l10n_ua_account_reports
+#: model:ir.ui.view,arch_db:l10n_ua_account_reports.ua_report_invoice_document
+msgid "Vendor Refund"
+msgstr "Відшкодування від постачальника"
