@@ -5,7 +5,7 @@
     'website': 'https://erp.co.ua',
     'category': 'Sales',
     'depends': ['sale'],
-    'version': '1.2',
+    'version': '1.3',
     # 'price': 20.00,
     # 'currency': 'EUR',
     'description': """
