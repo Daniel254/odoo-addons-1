@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <template id="ua_report_saleorder" inherit_id="sale.report_saleorder">
-            <xpath expr="//t[@t-call='report.html_container']" position="replace">
-                <t t-call="report.html_container">
-                    <t t-foreach="docs" t-as="doc">
-                        <t t-call="l10n_ua_sale_report.ua_report_saleorder_document" t-lang="doc.partner_id.lang"/>
-                    </t>
-                </t>
-            </xpath>
-        </template>
 
-
-
-        <template id="ua_report_saleorder_document">
+        <template id="ua_report_saleorder_document1">
             <t t-call="report.external_layout">
                 <t t-set="doc" t-value="doc.with_context({'lang':doc.partner_id.lang})" />
                 <div class="page">
@@ -170,6 +159,16 @@
                     </div>
                 </div>
             </t>
+        </template>
+
+        <template id="ua_report_saleorder" inherit_id="sale.report_saleorder">
+            <xpath expr="//t[@t-call='report.html_container']" position="replace">
+                <t t-call="report.html_container">
+                    <t t-foreach="docs" t-as="doc">
+                        <t t-call="l10n_ua_sale_report.ua_report_saleorder_document1" t-lang="doc.partner_id.lang"/>
+                    </t>
+                </t>
+            </xpath>
         </template>
 
     </data>
