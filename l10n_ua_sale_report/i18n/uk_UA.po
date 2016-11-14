@@ -16,126 +16,126 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: l10n_ua_sale_report
-#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document
+#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document1
 msgid "<span>Client:</span>"
 msgstr "<span>Від замовника:</span>"
 
 #. module: l10n_ua_sale_report
-#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document
+#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document1
 msgid "<span>Seller:</span>"
 msgstr "<span>Від постачальника:</span>"
 
 #. module: l10n_ua_sale_report
-#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document
+#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document1
 msgid "<strong>Expiration:</strong>"
 msgstr "<strong>Термін дії:</strong>"
 
 #. module: l10n_ua_sale_report
-#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document
+#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document1
 msgid "<strong>Fiscal Position Remark:</strong>"
 msgstr "<strong>Опис схеми оподаткування:</strong>"
 
 #. module: l10n_ua_sale_report
-#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document
+#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document1
 msgid "<strong>Incoterms:</strong>"
 msgstr "<strong>Інкотермс:</strong>"
 
 #. module: l10n_ua_sale_report
-#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document
+#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document1
 msgid "<strong>Legal address:</strong>"
 msgstr "<strong>Юридична адреса замовника:</strong>"
 
 #. module: l10n_ua_sale_report
-#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document
+#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document1
 msgid "<strong>Location:</strong>"
 msgstr "<strong>Місце скаладання:</strong>"
 
 #. module: l10n_ua_sale_report
-#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document
+#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document1
 msgid "<strong>Salesperson:</strong>"
 msgstr "<strong>Продавець:</strong>"
 
 #. module: l10n_ua_sale_report
-#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document
+#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document1
 msgid "<strong>Shipping address:</strong>"
 msgstr "<strong>Адреса поставки:</strong>"
 
 #. module: l10n_ua_sale_report
-#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document
+#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document1
 msgid "<strong>Total Without Taxes</strong>"
 msgstr "<strong>Всього</strong>"
 
 #. module: l10n_ua_sale_report
-#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document
+#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document1
 msgid "<strong>Total</strong>"
 msgstr "<strong>Разом</strong>"
 
 #. module: l10n_ua_sale_report
-#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document
+#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document1
 msgid "<strong>Your Reference:</strong>"
 msgstr "<strong>Референс:</strong>"
 
 #. module: l10n_ua_sale_report
-#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document
+#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document1
 msgid "Date Ordered:"
 msgstr "Дата:"
 
 #. module: l10n_ua_sale_report
-#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document
+#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document1
 msgid "Description"
 msgstr "Опис замовлених товарів чи послуг"
 
 #. module: l10n_ua_sale_report
-#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document
+#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document1
 msgid "Disc.(%)"
 msgstr "Знижка (%)"
 
 #. module: l10n_ua_sale_report
-#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document
+#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document1
 msgid "Invoicing address:"
 msgstr "Адреса платника:"
 
 #. module: l10n_ua_sale_report
-#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document
+#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document1
 msgid "Invoicing and shipping address:"
 msgstr "Адреса платника та поставки:"
 
 #. module: l10n_ua_sale_report
-#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document
+#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document1
 msgid "Order #"
 msgstr "Договір поставки №"
 
 #. module: l10n_ua_sale_report
-#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document
+#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document1
 msgid "Price"
 msgstr "Сума"
 
 #. module: l10n_ua_sale_report
-#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document
+#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document1
 msgid "Quantity"
 msgstr "Кількість"
 
 #. module: l10n_ua_sale_report
-#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document
+#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document1
 msgid "Quotation #"
 msgstr "Комерційна пропозиція №"
 
 #. module: l10n_ua_sale_report
-#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document
+#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document1
 msgid "Quotation Date:"
 msgstr "Дата пропозиції:"
 
 #. module: l10n_ua_sale_report
-#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document
+#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document1
 msgid "Registry:"
 msgstr "ЄДРПОУ:"
 
 #. module: l10n_ua_sale_report
-#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document
+#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document1
 msgid "Taxes"
 msgstr "Податки"
 
 #. module: l10n_ua_sale_report
-#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document
+#: model:ir.ui.view,arch_db:l10n_ua_sale_report.ua_report_saleorder_document1
 msgid "Unit Price"
 msgstr "Ціна"
