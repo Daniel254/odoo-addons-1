@@ -174,16 +174,6 @@
                         <div class="col-xs-4">
                         </div>
                         <div class="col-xs-4">
-                            <!-- <div t-if="o.type == 'out_invoice'">
-                                <span><strong>Постачальник:</strong></span><br/>
-                            </div>
-                            <div t-if="o.type == 'in_invoice'">
-                                <span><strong>Отримувач:</strong></span><br/>
-                            </div>
-                            <span t-if="o.company_id.name"><span t-field="o.company_id.name"/><br/></span>
-                            <span t-if="o.company_id.company_registry">ЕДРПОУ: <span t-field="o.company_id.company_registry"/><br/></span>
-                            <address t-field="o.company_id.partner_id"
-                                t-field-options='{"widget": "contact", "fields": ["address", "phone"], "no_marker": true, "phone_icons": true}' /> -->
                         </div>
                         <div class="col-xs-4">
                             <div t-if="o.type == 'out_invoice'">
@@ -192,10 +182,9 @@
                             <div t-if="o.type == 'in_invoice'">
                                 <span><strong>Vendor:</strong></span><br/>
                             </div>
-                            <span t-if="o.partner_id.name"><span t-field="o.partner_id.name"/><br/></span>
-                            <span t-if="o.partner_id.company_registry">Registry: <span t-field="o.partner_id.company_registry"/><br/></span>
-                            <address t-field="o.partner_id"
-                                t-field-options='{"widget": "contact", "fields": ["address", "phone"], "no_marker": true, "phone_icons": true}' />
+                            <div t-field="o.partner_id"
+                                t-field-options='{"widget": "contact", "fields": ["name", "address", "phone"], "no_marker": true, "phone_icons": true}' />
+                            <span t-if="o.partner_id.company_registry">Registry: <span t-field="o.partner_id.company_registry"/></span>
                         </div>
                     </div>
 

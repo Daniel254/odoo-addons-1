@@ -5,7 +5,7 @@
     'website': 'https://erp.co.ua',
     'category': 'Localization/Account Charts',
     'depends': ['account'],
-    'version': '2.2',
+    'version': '2.3',
     # 'price': 20.00,
     # 'currency': 'EUR',
     'description': """
@@ -20,7 +20,7 @@
     'auto_install': False,
     'demo': [],
     'data': [
-            'data/account_report.xml'
+            'data/account_report.xml',
             'views/acc_report_nakladna.xml',
         ],
     'installable': True
