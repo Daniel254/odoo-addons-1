@@ -362,10 +362,10 @@
                         </div>
                     </div>
 
-                    <p>Представник Замовника <span t-if="o.type == 'out_invoice'"><span t-field="o.company_id.name"/></span>
-                    <span t-if="o.type == 'in_invoice'"><span t-field="o.partner_id.name"/></span> з однієї сторони та
-                    представник Виконавця <span t-if="o.type == 'in_invoice'"><span t-field="o.company_id.name"/></span>
-                    <span t-if="o.type == 'out_invoice'"><span t-field="o.partner_id.name"/></span> з іншої сторони
+                    <p>Представник Замовника <span t-if="o.type == 'in_invoice'"><span t-field="o.company_id.name"/></span>
+                    <span t-if="o.type == 'out_invoice'"><span t-field="o.partner_id.name"/></span> з однієї сторони та
+                    представник Виконавця <span t-if="o.type == 'out_invoice'"><span t-field="o.company_id.name"/></span>
+                    <span t-if="o.type == 'in_invoice'"><span t-field="o.partner_id.name"/></span> з іншої сторони
                     склали акт про те, що Виконавець виконав в строк та в повному об’ємі, а Замовник прийняв наступні роботи:
                     </p>
                     <!-- Is there a discount on at least one line? -->
@@ -444,10 +444,10 @@
 
                     <div class="row mt32">
                         <div class="col-xs-6">
-                            <div t-if="o.type == 'out_invoice'">
+                            <div t-if="o.type == 'in_invoice'">
                                 <span><strong>Представник Замовника:</strong></span><br/>
                             </div>
-                            <div t-if="o.type == 'in_invoice'">
+                            <div t-if="o.type == 'out_invoice'">
                                 <span><strong>Представник Виконавця:</strong></span><br/>
                             </div>
                             <span t-if="o.company_id.name"><span t-field="o.company_id.name"/><br/></span>
@@ -456,10 +456,10 @@
                                 t-field-options='{"widget": "contact", "fields": ["address", "phone"], "no_marker": true, "phone_icons": true}' />
                         </div>
                         <div class="col-xs-6">
-                            <div t-if="o.type == 'out_invoice'">
+                            <div t-if="o.type == 'in_invoice'">
                                 <span><strong>Представник Виконавця:</strong></span><br/>
                             </div>
-                            <div t-if="o.type == 'in_invoice'">
+                            <div t-if="o.type == 'out_invoice'">
                                 <span><strong>Представник Замовника:</strong></span><br/>
                             </div>
                             <span t-if="o.partner_id.name"><span t-field="o.partner_id.name"/><br/></span>
