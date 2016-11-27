@@ -5,9 +5,10 @@
     'website': "https://erp.co.ua",
     'category': 'Localization',
     'depends': ['hr_payroll', 'hr_holidays'],
-    'version': '1.2',
-    # 'price': 100.00,
-    # 'currency': 'EUR',
+    'version': '1.3',
+    'license': 'OPL-1',
+    'price': 50.00,
+    'currency': 'EUR',
     'description': """
 Заробітна плата для України.
 =============================
@@ -24,8 +25,6 @@
     """,
 
     'auto_install': False,
-    # 'demo': ['l10n_be_hr_payroll_demo.xml'],
-    # 'website': 'https://www.odoo.com/page/accounting',
     'data': [
         'security/ir.model.access.csv',
         'data/leave_types.xml',
@@ -37,9 +36,7 @@
         'views/hr_payslip_vew.xml',
         'views/hr_payroll_view.xml',
         'views/contrib_registers_view.xml',
-        # 'l10n_be_hr_payroll_view.xml',
-        # 'l10n_be_hr_payroll_data.xml',
-        # 'data/hr.salary.rule.csv',
     ],
-    'installable': True
+    'installable': True,
+    'application': True,
 }

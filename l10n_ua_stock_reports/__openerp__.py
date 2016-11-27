@@ -5,9 +5,10 @@
     'website': 'https://erp.co.ua',
     'category': 'Inventory Management',
     'depends': ['stock'],
-    'version': '1.1',
-    # 'price': 20.00,
-    # 'currency': 'EUR',
+    'version': '1.2',
+    'license': 'OPL-1',
+    'price': 50.00,
+    'currency': 'EUR',
     'description': """
 Друковані форми для складськго обліку
 =======================================
@@ -20,5 +21,6 @@
     'demo': [],
     'data': ['views/report_nakladna.xml',
              'data/stock_report.xml'],
-    'installable': True
+    'installable': True,
+    'application': True,
 }

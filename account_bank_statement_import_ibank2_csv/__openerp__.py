@@ -6,9 +6,10 @@
     'summary': u"Імпорт виписки у форматі iBank2 csv",
     'category': 'Accounting & Finance',
     'depends': ['account'],
-    'version': '1.1',
-    # 'price': 100.00,
-    # 'currency': 'EUR',
+    'version': '1.2',
+    'license': 'OPL-1',
+    'price': 50.00,
+    'currency': 'EUR',
     'description': """
 Помічник імпорту банківської виписки з файлу
 у форматі iBank2 csv.
@@ -18,5 +19,6 @@
     'auto_install': False,
     'demo': [],
     'data': ['views/account_bank_statement_import_view.xml'],
-    'installable': True
+    'installable': True,
+    'application': True,
 }

@@ -2,7 +2,10 @@
 
 {
     'name': 'Supplier invoices on HR expenses',
-    'version': '1.0.1.0.0',
+    'version': '1.1',
+    'license': 'OPL-1',
+    'price': 20.00,
+    'currency': 'EUR',
     'category': 'HR',
     'author': 'ERP Ukraine',
     'website': 'http://erp.co.ua',
@@ -16,4 +19,6 @@ Pay Supplier invoice with HR expenses.
         'views/hr_expense_expense_view.xml',
     ],
     'installable': True,
+    'application': True,
+    'auto_install': False,
 }

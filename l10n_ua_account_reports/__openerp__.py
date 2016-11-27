@@ -5,9 +5,10 @@
     'website': 'https://erp.co.ua',
     'category': 'Localization/Account Charts',
     'depends': ['account'],
-    'version': '2.3',
-    # 'price': 20.00,
-    # 'currency': 'EUR',
+    'version': '2.4',
+    'license': 'OPL-1',
+    'price': 50.00,
+    'currency': 'EUR',
     'description': """
 Друковані форми первинних документів для бухгалтерії
 ======================================================
@@ -23,5 +24,6 @@
             'data/account_report.xml',
             'views/acc_report_nakladna.xml',
         ],
-    'installable': True
+    'installable': True,
+    'application': True,
 }

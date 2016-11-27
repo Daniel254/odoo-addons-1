@@ -11,9 +11,10 @@
     'author': "ERP Ukraine",
     'website': "https://erp.co.ua",
     'category': 'Localization/Account Charts',
-    'version': '1.4',
-    # 'price': 200.00,
-    # 'currency': 'EUR',
+    'version': '1.5',
+    'license': 'OPL-1',
+    'price': 50.00,
+    'currency': 'EUR',
     'depends': ['account',
                 'account_accountant',
                 ],
@@ -36,4 +37,6 @@
         'data/out_taxinvoice_sequence.xml'
     ],
     'installable': True,
+    'auto_install': False,
+    'application': True,
 }
