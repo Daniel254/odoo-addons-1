@@ -6,9 +6,10 @@
     'summary': u"Sync statements with PrivatBank online",
     'category': 'Accounting & Finance',
     'depends': ['account'],
-    'version': '1.1',
-    # 'price': 100.00,
-    # 'currency': 'EUR',
+    'version': '1.2',
+    'license': 'OPL-1',
+    'price': 50.00,
+    'currency': 'EUR',
     'description': """
 This app enables online synchronization of
 bank statement and payments with PrivatBank.
@@ -21,5 +22,6 @@ bank statement and payments with PrivatBank.
         'views/account_journal_view.xml',
         'views/account_payment_view.xml'
     ],
-    'installable': True
+    'installable': True,
+    'application': True,
 }

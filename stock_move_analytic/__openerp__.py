@@ -5,7 +5,10 @@
     'website': 'https://erp.co.ua',
     'category': 'Inventory Management',
     'depends': ['stock', 'stock_account'],
-    'version': '1.2',
+    'version': '1.3',
+    'license': 'OPL-1',
+    'price': 20.00,
+    'currency': 'EUR',
     'description': """
 Include analytic account in stock accounting entries
 ======================================================
@@ -18,8 +21,9 @@ analytic entry will be created and linked to journal move.
 This is useful for expences accumulation on analytic
 account when product is moved to manufacturing virtual location.
 """,
-    'auto_install': True,
+    'auto_install': False,
     'demo': [],
     'data': ['views/analytic_stock_view.xml'],
-    'installable': True
+    'installable': True,
+    'application': True,
 }

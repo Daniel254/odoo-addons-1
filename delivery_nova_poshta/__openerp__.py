@@ -4,7 +4,10 @@
     'name': 'Nova Poshta Shipping Integration',
     'category': 'Sales Management',
     'summary': 'Odoo - Nova Poshta Shipping Integration',
-    'version': '1.0',
+    'version': '1.1',
+    'license': 'OPL-1',
+    'price': 50.00,
+    'currency': 'EUR',
     'author': "ERP Ukraine",
     'website': "https://erp.co.ua",
     'depends': ['delivery'],
@@ -15,4 +18,6 @@
         'security/ir.model.access.csv'
     ],
     'application': True,
+    'auto_install': False,
+    'installable': True,
 }

@@ -4,9 +4,10 @@
     'author': "ERP Ukraine",
     'website': "https://erp.co.ua",
     'summary': u"Український бухоблік згідно МСФЗ",
-    'version': '1.3',
-    # 'price': 100.00,
-    # 'currency': 'EUR',
+    'version': '1.4',
+    'license': 'OPL-1',
+    'price': 50.00,
+    'currency': 'EUR',
     'description': u"""
 Бухгалтерський облік для України (МСФЗ)
 =======================================
@@ -32,4 +33,6 @@
         'data/account_chart_template.yml',
     ],
     'installable': True,
+    'auto_install': False,
+    'application': True,
 }

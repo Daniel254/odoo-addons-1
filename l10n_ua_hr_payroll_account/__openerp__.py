@@ -5,20 +5,19 @@
     'website': "https://erp.co.ua",
     'category': 'Localization',
     'depends': ['l10n_ua_hr_payroll', 'hr_payroll_account'],
-    'version': '1.2',
-    # 'price': 100.00,
-    # 'currency': 'EUR',
+    'version': '1.3',
+    'license': 'OPL-1',
+    'price': 50.00,
+    'currency': 'EUR',
     'description': """
 Бухгалтерські проведення для зарплати (МСФЗ)
 ==============================================
     """,
-
     'auto_install': False,
-    # 'website': 'https://www.odoo.com/page/accounting',
     'demo': [],
     'data': [
         'l10n_ua_hr_payroll_account_data.xml',
     ],
-    # 'post_init_hook': '_set_accounts',
-    'installable': True
+    'installable': True,
+    'application': True,
 }
