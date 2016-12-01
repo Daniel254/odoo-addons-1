@@ -20,7 +20,7 @@ class FbConfigWebsite(models.Model):
         default=True)
     fb_development_mode = fields.Boolean(
         string='Development Mode',
-        desription='Post articles in development mode before review',
+        description='Post articles in development mode before review',
         default=True)
     fb_published_articles = fields.Boolean(
       string='Post Articles Published',
