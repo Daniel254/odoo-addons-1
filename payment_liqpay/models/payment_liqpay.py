@@ -62,6 +62,11 @@ class AcquirerLiqPay(osv.Model):
             base_url, values['return_url'])
         callback_url = '%s' % urlparse.urljoin(
             base_url, '/payment/liqpay/callback')
+        partner_lang = 'uk'
+        if values['partner_lang'] and values['partner_lang'] == 'en_US':
+            partner_lang = 'en'
+        if values['partner_lang'] and values['partner_lang'] == 'ru_RU':
+            partner_lang = 'ru'
         request = {
           'version': '3',
           'public_key': acquirer.liqpay_public_key,
@@ -70,6 +75,7 @@ class AcquirerLiqPay(osv.Model):
           'currency': values['currency'] and values['currency'].name or 'UAH',
           'description': _('Order payment: %s') % values['reference'],
           'order_id': values['reference'],
+          'language': partner_lang,
           'sandbox': '1' if acquirer.environment == 'test' else '',
           'server_url': callback_url,
           'result_url': return_url,

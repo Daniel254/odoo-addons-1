@@ -114,6 +114,7 @@ class LiqPayController(http.Controller):
                 succes_statuses = ['success',
                                    'sandbox']
                 error_statuses = ['error',
+                                  'reversed',
                                   'failure']
                 if status in pending_statuses:
                     tr.write({
