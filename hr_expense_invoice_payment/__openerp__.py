@@ -3,7 +3,7 @@
 {
     'name': 'Supplier invoices on HR expenses',
     'version': '1.1',
-    'license': 'OPL-1',
+    'license': 'Other proprietary',
     'price': 20.00,
     'currency': 'EUR',
     'category': 'HR',

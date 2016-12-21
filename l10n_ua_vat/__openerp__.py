@@ -12,7 +12,7 @@
     'website': "https://erp.co.ua",
     'category': 'Localization/Account Charts',
     'version': '1.5',
-    'license': 'OPL-1',
+    'license': 'Other proprietary',
     'price': 50.00,
     'currency': 'EUR',
     'depends': ['account',

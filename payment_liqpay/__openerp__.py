@@ -5,7 +5,7 @@
     'category': 'Website',
     'summary': 'Payment Acquirer: LiqPay Implementation',
     'version': '1.3',
-    'license': 'OPL-1',
+    'license': 'Other proprietary',
     'price': 50.00,
     'currency': 'EUR',
     'author': "ERP Ukraine",

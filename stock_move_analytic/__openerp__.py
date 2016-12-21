@@ -6,7 +6,7 @@
     'category': 'Inventory Management',
     'depends': ['stock', 'stock_account'],
     'version': '1.3',
-    'license': 'OPL-1',
+    'license': 'Other proprietary',
     'price': 20.00,
     'currency': 'EUR',
     'description': """

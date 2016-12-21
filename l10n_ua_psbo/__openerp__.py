@@ -5,7 +5,7 @@
     'website': "https://erp.co.ua",
     'summary': u"Український бухоблік згідно ПСБО",
     'version': '1.3',
-    'license': 'OPL-1',
+    'license': 'Other proprietary',
     'price': 50.00,
     'currency': 'EUR',
     'description': u"""

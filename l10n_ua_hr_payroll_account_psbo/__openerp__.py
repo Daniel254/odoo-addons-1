@@ -6,7 +6,7 @@
     'category': 'Localization',
     'depends': ['l10n_ua_hr_payroll', 'hr_payroll_account'],
     'version': '1.3',
-    'license': 'OPL-1',
+    'license': 'Other proprietary',
     'price': 50.00,
     'currency': 'EUR',
     'description': """
