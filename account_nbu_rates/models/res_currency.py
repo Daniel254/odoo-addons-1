@@ -71,6 +71,7 @@ class Currency(models.Model):
                 ('name', '!=', 'UAH'),
                 ('active', '=', True)])
             for ccy in active_ccys:
+                response = [{}]
                 params = {
                     'valcode': ccy.name,
                     'date': date[0:4] + date[5:7] + date[8:10],
@@ -86,8 +87,8 @@ class Currency(models.Model):
                 except:
                     _logger.warn('JSON parsing error')
                     continue
-                if r.status_code == 200 and response[0]:
-                    if response[0]['rate'] > 0:
+                if r.status_code == 200 and len(response) > 0:
+                    if response[0].get('rate', 0) > 0:
                         self.env['res.currency.rate'].create({
                             'currency_id': ccy.id,
                             'rate': uah_ccy.rate / response[0]['rate'],
