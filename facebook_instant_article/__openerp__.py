@@ -4,7 +4,7 @@
     'description': 'Publish Blog Posts to Facebook as Instant Articles.',
     'category': 'Website',
     'version': '1.2',
-    'license': 'OPL-1',
+    'license': 'Other proprietary',
     'price': 50.00,
     'currency': 'EUR',
     'author': "ERP Ukraine",

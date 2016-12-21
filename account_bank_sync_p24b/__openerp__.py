@@ -7,7 +7,7 @@
     'category': 'Accounting & Finance',
     'depends': ['account'],
     'version': '1.2',
-    'license': 'OPL-1',
+    'license': 'Other proprietary',
     'price': 50.00,
     'currency': 'EUR',
     'description': """

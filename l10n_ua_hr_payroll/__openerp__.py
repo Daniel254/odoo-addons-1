@@ -6,7 +6,7 @@
     'category': 'Localization',
     'depends': ['hr_payroll', 'hr_holidays'],
     'version': '1.3',
-    'license': 'OPL-1',
+    'license': 'Other proprietary',
     'price': 50.00,
     'currency': 'EUR',
     'description': """

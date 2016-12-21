@@ -5,7 +5,7 @@
     'category': 'Hidden',
     'summary': 'Payment Acquirer: LiqPay Split Rules',
     'version': '1.3',
-    'license': 'OPL-1',
+    'license': 'Other proprietary',
     'price': 50.00,
     'currency': 'EUR',
     'author': 'ERP Ukraine',

@@ -5,7 +5,7 @@
     'category': 'Website',
     'summary': 'Nova Poshta Shipping Integration for Website Sales',
     'version': '1.1',
-    'license': 'OPL-1',
+    'license': 'Other proprietary',
     'price': 50.00,
     'currency': 'EUR',
     'author': "ERP Ukraine",

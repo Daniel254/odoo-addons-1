@@ -6,7 +6,7 @@
     'category': 'Localization/Account Charts',
     'depends': ['account'],
     'version': '2.4',
-    'license': 'OPL-1',
+    'license': 'Other proprietary',
     'price': 50.00,
     'currency': 'EUR',
     'description': """
