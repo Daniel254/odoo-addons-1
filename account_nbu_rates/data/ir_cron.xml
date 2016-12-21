@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.cron" id="update_nbu_rates">
+            <field name="name">Update NBU exchange rates</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="doall" eval="False"/>
+            <field name="model" eval="'res.currency'"/>
+            <field name="function" eval="'_update_nbu_rates'"/>
+            <field name="args" eval="'()'" />
+        </record>
+   </data>
+</odoo>
