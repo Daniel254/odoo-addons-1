@@ -6,7 +6,7 @@
             <field name="interval_number">1</field>
             <field name="interval_type">days</field>
             <field name="numbercall">-1</field>
-            <field name="doall" eval="True"/>
+            <field name="doall" eval="False"/>
             <field name="model" eval="'res.currency'"/>
             <field name="function" eval="'_update_nbu_rates'"/>
             <field name="args" eval="'()'" />

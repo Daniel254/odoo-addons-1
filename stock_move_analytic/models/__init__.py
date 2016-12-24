@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 
-import analytic_stock_move
+from . import analytic_stock_move

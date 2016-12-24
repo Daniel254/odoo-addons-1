@@ -1,5 +1,5 @@
 
 # -*- coding: utf-8 -*-
 
-import account_journal
-import account_payment
+from . import account_journal
+from . import account_payment

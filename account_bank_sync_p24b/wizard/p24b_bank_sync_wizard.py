@@ -568,7 +568,7 @@ class P24BBankSync(models.TransientModel):
             'MUR': '',
             'type': 'cr',
         }
-        print data
+
         # P24_NEWPAYMENT_URL
         self.r = self.s.post(self.P24_NEWPAYMENT_URL,
                              data=json.dumps(data),
@@ -727,7 +727,7 @@ class P24BBankSync(models.TransientModel):
                     # user have selected phone to send OTP to
                     # we should send it to the server
                     if not self._select_otp_phone(self.phone_sel.phone_id):
-                        logger.warning('err code: %s' % self.r.status_code)
+                        _logger.warning('err code: %s' % self.r.status_code)
                         # self.phone_sel = []
                         self.state = 'failure'
                         return wiz_form_act

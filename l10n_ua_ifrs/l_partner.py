@@ -13,4 +13,5 @@ class res_partner(osv.osv):
                                         u"або код в ДРФО для ФОП")
     }
 
+
 res_partner()

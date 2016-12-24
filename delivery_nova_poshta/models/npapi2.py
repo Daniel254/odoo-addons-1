@@ -5,69 +5,68 @@ import requests
 import logging
 from logging import NullHandler
 
-"""Simple NovaPoshta RPC-style API wrapper
+# Simple NovaPoshta RPC-style API wrapper
+#
+# How to use
+# ==========
+#
+# Create instance of NPApi class for your API Key::
+#
+#     >>> api = NPApi('my auth key')
+#
+# Access any Nova Poshta model and call any Nova Poshta
+# method in one of following ways::
+#
+#     >>> api['<model>']['<method>']({<args>})
+#     >>> api['<model>']['<method>'](Parametr1=42, Parametr3='String data')
+#     >>> api.model.method({<args>})
+#     >>> api.model.method(Parametr1=42, Parametr3='String data')
+#
+# For example::
+#
+#     >>> cities = api.Address.getCities()
+#     >>> kyiv = api.Address.getCities(FindByString='Київ')
+#     >>> print(kyiv)
+#     [{u'Area': u'71508131-9b87-11de-822f-000c2965ae0e',
+#       u'CityID': u'4',
+#       u'Conglomerates': [u'd4771ed0-4fb7-11e4-91b8-2f592fe1dcac',
+#       u'f86b75e9-42f4-11e4-91b8-2f592fe1dcac'],
+#       u'Delivery1': u'1',
+#       u'Delivery2': u'1',
+#       u'Delivery3': u'1',
+#       u'Delivery4': u'1',
+#       u'Delivery5': u'1',
+#       u'Delivery6': u'1',
+#       u'Delivery7': u'0',
+#       u'Description': u'\u041a\u0438\u0457\u0432',
+#       u'DescriptionRu': u'\u041a\u0438\u0435\u0432',
+#       u'Ref': u'8d5a980d-391c-11dd-90d9-001a92567626'}]
+#
+# Or call same method, without implicit response processing,
+# in this case you can manualy process errors, info, success
+# and warnings sections::
+#
+#     >>> kyiv_res = api.Address.getCities.call(FindByString='Київ')
+#     >>> print(kyiv_res)
+#     {u'data': [{u'Area': u'71508131-9b87-11de-822f-000c2965ae0e',
+#        u'CityID': u'4',
+#        u'Conglomerates': [u'd4771ed0-4fb7-11e4-91b8-2f592fe1dcac',
+#         u'f86b75e9-42f4-11e4-91b8-2f592fe1dcac'],
+#        u'Delivery1': u'1',
+#        u'Delivery2': u'1',
+#        u'Delivery3': u'1',
+#        u'Delivery4': u'1',
+#        u'Delivery5': u'1',
+#        u'Delivery6': u'1',
+#        u'Delivery7': u'0',
+#        u'Description': u'\u041a\u0438\u0457\u0432',
+#        u'DescriptionRu': u'\u041a\u0438\u0435\u0432',
+#        u'Ref': u'8d5a980d-391c-11dd-90d9-001a92567626'}],
+#     u'errors': [],
+#     u'info': [],
+#     u'success': True,
+#     u'warnings': []}
 
-How to use
-==========
-
-Create instance of NPApi class for your API Key::
-
-    >>> api = NPApi('my auth key')
-
-Access any Nova Poshta model and call any Nova Poshta
-method in one of following ways::
-
-    >>> api['<model>']['<method>']({<args>})
-    >>> api['<model>']['<method>'](Parametr1=42, Parametr3='String data')
-    >>> api.model.method({<args>})
-    >>> api.model.method(Parametr1=42, Parametr3='String data')
-
-For example::
-
-    >>> cities = api.Address.getCities()
-    >>> kyiv = api.Address.getCities(FindByString='Київ')
-    >>> print(kyiv)
-    [{u'Area': u'71508131-9b87-11de-822f-000c2965ae0e',
-      u'CityID': u'4',
-      u'Conglomerates': [u'd4771ed0-4fb7-11e4-91b8-2f592fe1dcac',
-      u'f86b75e9-42f4-11e4-91b8-2f592fe1dcac'],
-      u'Delivery1': u'1',
-      u'Delivery2': u'1',
-      u'Delivery3': u'1',
-      u'Delivery4': u'1',
-      u'Delivery5': u'1',
-      u'Delivery6': u'1',
-      u'Delivery7': u'0',
-      u'Description': u'\u041a\u0438\u0457\u0432',
-      u'DescriptionRu': u'\u041a\u0438\u0435\u0432',
-      u'Ref': u'8d5a980d-391c-11dd-90d9-001a92567626'}]
-
-Or call same method, without implicit response processing,
-in this case you can manualy process errors, info, success
-and warnings sections::
-
-    >>> kyiv_res = api.Address.getCities.call(FindByString='Київ')
-    >>> print(kyiv_res)
-    {u'data': [{u'Area': u'71508131-9b87-11de-822f-000c2965ae0e',
-       u'CityID': u'4',
-       u'Conglomerates': [u'd4771ed0-4fb7-11e4-91b8-2f592fe1dcac',
-        u'f86b75e9-42f4-11e4-91b8-2f592fe1dcac'],
-       u'Delivery1': u'1',
-       u'Delivery2': u'1',
-       u'Delivery3': u'1',
-       u'Delivery4': u'1',
-       u'Delivery5': u'1',
-       u'Delivery6': u'1',
-       u'Delivery7': u'0',
-       u'Description': u'\u041a\u0438\u0457\u0432',
-       u'DescriptionRu': u'\u041a\u0438\u0435\u0432',
-       u'Ref': u'8d5a980d-391c-11dd-90d9-001a92567626'}],
-    u'errors': [],
-    u'info': [],
-    u'success': True,
-    u'warnings': []}
-
-"""
 
 __author__ = "Dmytro Katyukha <firemage.dima@gmail.com>"
 __version__ = "0.0.1"

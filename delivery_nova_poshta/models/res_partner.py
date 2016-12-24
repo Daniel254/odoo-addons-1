@@ -4,7 +4,7 @@ import logging
 from openerp import fields, models, api, _
 from openerp.exceptions import UserError
 
-from npapi2 import NPApi, NPException
+from .npapi2 import NPApi, NPException
 import re
 
 _logger = logging.getLogger(__name__)

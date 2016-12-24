@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-import account_tax_invoice
-import account_spr_sti
-import company
-import product
-import partner
-import account_invoice
+from . import account_tax_invoice
+from . import account_spr_sti
+from . import company
+from . import product
+from . import partner
+from . import account_invoice

@@ -36,32 +36,25 @@ class TaxInvoiceImport(models.TransientModel):
         declarhead = root.find('DECLARHEAD')
         if declarhead is None:
             raise UserError(_(u"Невірний формат файлу"))
-            return True
         c_doc = declarhead.find('C_DOC')
         if c_doc is None:
             raise UserError(_(u"Невірна версія формату xml"))
-            return True
         if c_doc.text != 'J12' and c_doc.text != 'F12':
             raise UserError(_(u"Невірна версія формату xml"))
-            return True
         c_doc_sub = declarhead.find('C_DOC_SUB')
         if c_doc_sub is None or c_doc_sub.text != '010':
             raise UserError(_(u"Невірна версія формату xml"))
-            return True
         c_doc_ver = declarhead.find('C_DOC_VER')
         if c_doc_ver is None or c_doc_ver.text != '8':
             raise UserError(_(u"Невірна версія формату xml"))
-            return True
 
         declarbody = root.find('DECLARBODY')
         if declarbody is None:
             raise UserError(_(u"Невірний формат файлу"))
-            return True
         # check if we are buyers
         hkbuy = declarbody.find('HKBUY')
         if hkbuy is None:
             raise UserError(_(u"Невірний формат файлу"))
-            return True
         if hkbuy.text.find(company_id.vat) < 0:
             raise UserError(_(u"ІПН %s покупця не співпадає "
                               u"з ІПН вашої організації!" % hkbuy.text))
@@ -69,29 +62,24 @@ class TaxInvoiceImport(models.TransientModel):
         hfbuy = declarbody.find('HFBUY')
         if hfbuy is None:
             raise UserError(_(u"Невірний формат файлу"))
-            return True
         num2txt = hfbuy.text or ''
         my_code = company_id.kod_filii or ''
         if my_code != num2txt:
             raise UserError(
-             _(u"Код філії '%s' не співпадає "
-               u"з кодом філії вашої організації!" % my_code))
-            return True
+                _(u"Код філії '%s' не співпадає "
+                  u"з кодом філії вашої організації!" % my_code))
         # check if partner is already in database
         hksel = declarbody.find('HKSEL')
         if hksel is None:
             raise UserError(_(u"Невірний формат файлу"))
-            return True
         domain = [('vat', '=', hksel.text),
                   ('supplier', '=', True),
                   ('is_company', '=', True)]
         partner_id = self.env['res.partner'].search(domain, limit=1)
         if len(partner_id) == 0:
             raise UserError(_(u"Немає продавця з таким ІПН %s" % hksel.text))
-            return True
         if partner_id.id == company_id.partner_id.id:
             raise UserError(_(u"ІПН продавця співпадає з вашим ІПН"))
-            return True
         # Ok let's write taxinvoice
         ctx = dict(self._context)
         ctx['company_id'] = company_id.id

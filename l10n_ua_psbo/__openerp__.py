@@ -22,7 +22,6 @@
 для обліку ПДВ
     """,
     'category': 'Localization',
-    'version': '1.1',
     'depends': ['account'],
     'data': [
         'partner_view.xml',

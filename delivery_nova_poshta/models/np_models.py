@@ -6,7 +6,7 @@ from openerp.exceptions import Warning
 from datetime import datetime
 import logging
 
-from npapi2 import NPApi, NPException
+from .npapi2 import NPApi, NPException
 
 _logger = logging.getLogger(__name__)
 
@@ -31,7 +31,11 @@ class NPModel(models.AbstractModel):
         return z
 
     @api.model
-    def cron_update(self, params={}, static_ref={}, api_key=''):
+    def cron_update(self, params=None, static_ref=None, api_key=''):
+        if params is None:
+            params = {}
+        if static_ref is None:
+            static_ref = {}
         if not api_key:
             api_key = self._get_np_api_key()
         if not api_key:

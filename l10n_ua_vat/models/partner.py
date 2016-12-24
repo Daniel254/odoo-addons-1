@@ -8,4 +8,5 @@ class ResPartnerKod(models.Model):
 
     kod_filii = fields.Char(string=u"Код філії", size=4)
 
+
 ResPartnerKod()

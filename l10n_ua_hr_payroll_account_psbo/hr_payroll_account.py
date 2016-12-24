@@ -145,7 +145,6 @@ class hr_payslip(osv.osv):
                                 slip.journal_id.name))
                 adjust_credit = (0, 0, {
                     'name': _('Adjustment Entry'),
-                    'date': timenow,
                     'partner_id': False,
                     'account_id': acc_id,
                     'journal_id': slip.journal_id.id,

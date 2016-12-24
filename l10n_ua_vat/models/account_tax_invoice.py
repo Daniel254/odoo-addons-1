@@ -511,11 +511,9 @@ class TaxInvoice(models.Model):
         for tinv in self:
             if tinv.amount_tax == 0:
                 raise UserError(_(u"Сума ПДВ дорівнює нулю!"))
-                return True    # no moves if taxes amount == 0
             if tinv.move_id:
                 if tinv.move_id.id != 0:
                     raise UserError(_(u"Запис в журналі вже створенно!"))
-                    continue
             if tinv.invoice_id:
                 if tinv.invoice_id.number:
                     reference = tinv.invoice_id.number

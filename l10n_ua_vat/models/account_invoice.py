@@ -100,7 +100,7 @@ class VatAccountInvoice(models.Model):
                     htypr = '00'
             else:
                 raise UserError(_(u"Вкажіть ІПН у налаштуваннях контрагента."))
-                return {}
+
             acc_ti = self.env['account.taxinvoice']
             ctx = dict(self._context)
             ctx['company_id'] = inv.company_id.id
