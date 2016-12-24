@@ -14,4 +14,5 @@ class res_company(osv.osv):
                                            size=10)
     }
 
+
 res_company()
