@@ -30,15 +30,15 @@ odoo.define('facebook_instant_article.facebook_instant_article', function (requi
         if($fb_import_id.val() !== ""){
             //check import status
             var import_status = checkArticleImportStatus($fb_import_id.val());
-            if (import_status != true) {
+            if (import_status !== true) {
                 check_timer = window.setInterval(function () {
                     var $fb_import_id = $("input[name='fb_import_id']");
                     ajax.jsonRpc('/fb_instant_article/check_import', 'call', {'fb_import_id': $fb_import_id.val()})
                         .then(function(data){
                             if (data === true) {
                                 $("span[id='fb_import_ok']").show();
-                                if (typeof check_timer != undefined){
-                                    window.clearInterval(check_timer)
+                                if (typeof check_timer !== undefined){
+                                    window.clearInterval(check_timer);
                                 }
                                 return true;
                             } else {
