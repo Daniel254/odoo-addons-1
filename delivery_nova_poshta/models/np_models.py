@@ -6,7 +6,7 @@ from openerp.exceptions import Warning
 from datetime import datetime
 import logging
 
-from npapi2 import NPApi, NPException
+from .npapi2 import NPApi, NPException
 
 _logger = logging.getLogger(__name__)
 

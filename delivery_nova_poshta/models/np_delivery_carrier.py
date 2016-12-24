@@ -5,7 +5,7 @@ from openerp.exceptions import UserError
 from openerp.tools import ustr
 from datetime import datetime
 import logging
-from npapi2 import NPApi, NPException
+from .npapi2 import NPApi, NPException
 
 _logger = logging.getLogger(__name__)
 
