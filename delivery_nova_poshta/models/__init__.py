@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
 
-import np_models
-import np_delivery_carrier
-import res_partner
+from . import np_models
+from . import np_delivery_carrier
+from . import res_partner

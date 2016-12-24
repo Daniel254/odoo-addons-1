@@ -5,7 +5,6 @@
     'website': 'https://erp.co.ua',
     'summary': u"Sync statements with PrivatBank online",
     'category': 'Accounting & Finance',
-    'depends': ['account'],
     'version': '1.2',
     'license': 'Other proprietary',
     'price': 50.00,

@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 
-import payment_liqpay_split
+from . import payment_liqpay_split

@@ -5,7 +5,6 @@
     'website': 'https://erp.co.ua',
     'summary': u"Sync NBU exchange rates online",
     'category': 'Accounting & Finance',
-    'depends': ['account'],
     'version': '1.0',
     'license': 'Other proprietary',
     'price': 50.00,

@@ -67,7 +67,6 @@ class NpDeliveryCarrier(models.Model):
             if not res:
                 self.np_api_key = ''
                 raise UserError("Невірний ключ АРІ")
-                break
 
     def _get_weight_volume(self, order=None, picking=None):
         weight = 0.0
@@ -120,9 +119,9 @@ class NpDeliveryCarrier(models.Model):
             try:
                 if not api_key:
                     _logger.warn('No API key')
-                    raise UserError(u'Не вказано ключ API Нової Пошти')
                     prices.append(0.00)
-                    continue
+                    raise UserError(u'Не вказано ключ API Нової Пошти')
+
                 weight, volume, cost = self._get_weight_volume(order=order)
                 np_api = NPApi(api_key)
                 shipping_date = fields.Date.from_string(order.date_order)
@@ -182,11 +181,11 @@ class NpDeliveryCarrier(models.Model):
             try:
                 if not api_key:
                     _logger.warn('No API key')
-                    raise UserError(u'Не вказано ключ API Нової Пошти')
                     res.append(
                         {'exact_price': 0.00,
                          'tracking_number': ''})
-                    continue
+                    raise UserError(u'Не вказано ключ API Нової Пошти')
+
                 weight, volume, cost = self._get_weight_volume(picking=picking)
                 np_api = NPApi(api_key)
                 shipping_date = fields.Date.from_string(picking.min_date)

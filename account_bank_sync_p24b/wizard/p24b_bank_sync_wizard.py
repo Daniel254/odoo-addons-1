@@ -568,7 +568,7 @@ class P24BBankSync(models.TransientModel):
             'MUR': '',
             'type': 'cr',
         }
-        print data
+
         # P24_NEWPAYMENT_URL
         self.r = self.s.post(self.P24_NEWPAYMENT_URL,
                              data=json.dumps(data),
