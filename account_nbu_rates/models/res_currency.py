@@ -78,7 +78,9 @@ class Currency(models.Model):
                     'json': '',
                 }
                 try:
-                    r = requests.get(self.NBU_EX_URL, params=params)
+                    r = requests.get(self.NBU_EX_URL,
+                                     params=params,
+                                     timeout=30)
                 except requests.exceptions.RequestException as e:
                     _logger.warn(e)
                     continue
