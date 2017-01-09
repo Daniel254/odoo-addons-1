@@ -162,7 +162,7 @@
             <field name="name">taxinvoice.tree</field>
             <field name="model">account.taxinvoice</field>
             <field name="arch" type="xml">
-                <tree string="Список ПН" default_order="date_vyp,partner_id desc">
+                <tree string="Список ПН" default_order="date_vyp desc, partner_id desc, id desc">
                     <field name="number"/>
                     <field name="date_vyp"/>
                     <field name="date_reg"/>
