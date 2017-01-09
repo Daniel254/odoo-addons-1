@@ -55,8 +55,12 @@ class VatAccountInvoice(models.Model):
         self.ensure_one()
         tax_invoice_ids = self.mapped('tax_invoice_ids')
         imd = self.env['ir.model.data']
-        action = imd.xmlid_to_object(
-            'l10n_ua_vat.customer_tax_invoice_list_action')
+        if self.type in ('out_invoice', 'out_refund'):
+            action = imd.xmlid_to_object(
+                'l10n_ua_vat.customer_tax_invoice_list_action')
+        else:
+            action = imd.xmlid_to_object(
+                'l10n_ua_vat.supplier_tax_invoice_list_action')
         list_view_id = imd.xmlid_to_res_id(
             'l10n_ua_vat.tax_invoice_tree_view')
         form_view_id = imd.xmlid_to_res_id(
