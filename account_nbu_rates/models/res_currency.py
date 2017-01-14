@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
 
-from openerp import models, fields, api, _
-from openerp.exceptions import UserError
-import requests
-import json
-
 import logging
+
+import requests
+
+from openerp import api, fields, models
 _logger = logging.getLogger(__name__)
 
 
@@ -43,10 +42,9 @@ class Currency(models.Model):
 
     @api.model
     def _update_nbu_rates(self):
-        date = self._context.get('date') or fields.Datetime.now()
+        date = self._context.get('date') or fields.Date.today()
         companies = self.env['res.company'].search([])
         for company in companies:
-            base_ccy = company.currency_id
             uah_ccy = self.env['res.currency'].search([
                 ('name', '=', 'UAH'),
                 ('active', '=', True)])
@@ -86,7 +84,7 @@ class Currency(models.Model):
                     continue
                 try:
                     response = r.json()
-                except:
+                except (ValueError, UnicodeDecodeError):
                     _logger.warn('JSON parsing error')
                     continue
                 if r.status_code == 200 and len(response) > 0:
